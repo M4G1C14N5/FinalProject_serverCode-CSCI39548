@@ -19,13 +19,15 @@ const seedDB = async () => {
 	const dummy_campus2 = await Campus.create({
 		name: "Queens College",
 		address: "65-30 Kissena Blvd, Queens, NY 11367",
-		description: "This is a school in Queens, New York."
+		description: "This is a school in Queens, New York.",
+		imageUrl: "https://macaulay.cuny.edu/wp-content/uploads/2016/07/qc10_bg_000056-1920x1080.jpg"
 	});
 	// Create a new campus
 	const dummy_campus3 = await Campus.create({
 		name: "Brooklyn College",
 		address: "2900 Bedford Ave, Brooklyn, NY 11210",
-		description: "This is a school in Brooklyn, New York."
+		description: "This is a school in Brooklyn, New York.",
+		imageUrl: "http://www.brooklyn.cuny.edu/web/com_homepage_2022/210902_UGOH_1400x788.jpg"
 	});
 	
 	// Create a new student for a campus
