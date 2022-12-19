@@ -2,6 +2,7 @@
 /database/utils/seedDB.js
 
 It seeds the database with several initial students and campuses.
+we will also add pictures to the campuses.
 ==================================================*/
 const { Campus, Student } = require('../models');  // Import database models
 
@@ -11,7 +12,8 @@ const seedDB = async () => {
 	const dummy_campus = await Campus.create({
 		name: "Hunter College",
 		address: "695 Park Ave, New York, NY 10065",
-		description: "This is a school in New York, New York."
+		description: "This is a school in New York, New York.",
+		imageUrl: "https://s29068.pcdn.co/wp-content/uploads/hunter-new-york-city-street-view.jpg"
 	});
 	// Create a new campus
 	const dummy_campus2 = await Campus.create({
